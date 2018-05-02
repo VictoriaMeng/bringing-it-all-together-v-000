@@ -4,4 +4,7 @@ class Dog
   def initialize(attributes)
     attributes.each { |key, value| self.send("#{key}=", value) }
   end
+
+  def create_table
+  end
 end
