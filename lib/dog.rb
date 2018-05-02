@@ -13,6 +13,7 @@ class Dog
         breed TEXT
       )
     SQL
+    self.drop_table
     DB[:conn].execute(sql)
   end
 
