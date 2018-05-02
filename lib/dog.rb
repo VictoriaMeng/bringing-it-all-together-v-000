@@ -46,6 +46,7 @@ class Dog
       FROM dogs
       WHERE id = ?
     SQL
+    Dog.new_from_db(DB[:conn].execute(sql, id)[0])
   end
 
   def self.new_from_db(row)
