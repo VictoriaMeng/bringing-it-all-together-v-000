@@ -21,6 +21,11 @@ class Dog
     DB[:conn].execute("DROP TABLE IF EXISTS dogs")
   end
 
-  def save 
+  def save
+    sql = <<-SQL
+      INSERT INTO dogs (name, breed)
+      VALUES (name = ?, breed = ?)
+    SQL
+    DB[:conn].execute(sql, @name, @breed)
   end
 end
