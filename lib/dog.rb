@@ -23,6 +23,7 @@ class Dog
 
   def save
     if @id
+      update
     else
       sql = <<-SQL
         INSERT INTO dogs (name, breed)
