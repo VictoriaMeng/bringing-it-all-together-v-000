@@ -50,10 +50,10 @@ class Dog
 
   def self.new_from_db(row)
     dog = Dog.new({})
-    student.id = row[0]
-    student.name = row[1]
-    student.grade = row[2]
-    student
+    dog.id = row[0]
+    dog.name = row[1]
+    dog.grade = row[2]
+    dog
   end
 
   def self.find_or_create_by
