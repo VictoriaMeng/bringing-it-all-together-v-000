@@ -59,7 +59,11 @@ class Dog
   end
 
   def self.find_or_create_by(attributes)
-    if attributes[:id]
+    sql = <<-SQL
+
+    SQL
+
+    if attributes[:name]
       Dog.find_by_id(attributes[:id])
     else
       Dog.create(attributes)
