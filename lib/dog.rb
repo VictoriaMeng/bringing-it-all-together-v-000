@@ -58,7 +58,7 @@ class Dog
     dog
   end
 
-  def self.find_or_create_by(name, breed)
+  def self.find_or_create_by(attributes)
     sql = <<-SQL
       SELECT *
       FROM dogs
