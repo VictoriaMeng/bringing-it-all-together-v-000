@@ -68,7 +68,7 @@ class Dog
     if attributes[:name]
       Dog.find_by_id(attributes[:id])
     else
-      Dog.create(attributes)
+      # Dog.create(attributes)
     end
   end
 
