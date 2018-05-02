@@ -59,6 +59,9 @@ class Dog
   end
 
   def self.find_or_create_by(attributes)
+    if attributes[:id].empty?
+      Dog.create(attributes)
+    end
   end
 
   def self.find_by_name(name)
