@@ -60,9 +60,9 @@ class Dog
 
   def self.find_or_create_by(attributes)
     if attributes[:id]
-      Dog.create(attributes)
-    else
       Dog.find_by_id(attributes[:id])
+    else
+      Dog.create(attributes)    
     end
   end
 
