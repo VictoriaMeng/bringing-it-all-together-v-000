@@ -49,7 +49,7 @@ class Dog
   end
 
   def self.new_from_db(row)
-    dog = Dog.new(nil, nil)
+    dog = Dog.new({})
     student.id = row[0]
     student.name = row[1]
     student.grade = row[2]
