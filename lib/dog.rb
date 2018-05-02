@@ -53,6 +53,7 @@ class Dog
     student.id = row[0]
     student.name = row[1]
     student.grade = row[2]
+    student
   end
 
   def self.find_or_create_by
