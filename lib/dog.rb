@@ -65,11 +65,11 @@ class Dog
       WHERE name = ?, breed = ?
     SQL
     DB[:conn].execute(sql, name, breed)
-    if attributes[:name]
-      Dog.find_by_id(attributes[:id])
-    else
-      # Dog.create(attributes)
-    end
+    # if attributes[:name]
+    #   Dog.find_by_id(attributes[:id])
+    # else
+    #   # Dog.create(attributes)
+    # end
   end
 
   def self.find_by_name(name)
