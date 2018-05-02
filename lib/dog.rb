@@ -62,7 +62,7 @@ class Dog
     sql = <<-SQL
       SELECT id, name, breed
       FROM dogs
-      -- WHERE name = ?, breed = ?
+      WHERE name = ?, breed = ?
     SQL
     row = DB[:conn].execute(sql, attributes[:name], attributes[:breed])[0]
     if attributes[:name]
