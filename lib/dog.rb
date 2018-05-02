@@ -66,7 +66,7 @@ class Dog
       FROM dogs
       WHERE name = ?, breed = ?
     SQL
-    DB[:conn].execute(sql, name, breed)
+    # DB[:conn].execute(sql, name, breed)
     binding.pry
     # if attributes[:name]
     #   Dog.find_by_id(attributes[:id])
