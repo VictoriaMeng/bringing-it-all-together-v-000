@@ -68,7 +68,7 @@ class Dog
     SQL
     row = DB[:conn].execute(sql, name, breed)[0]
     binding.pry
-    if row.include?(nil)
+    if row.empty?
       Dog.create(attributes)
     else
       Dog.find_by_id(row[0])
