@@ -60,7 +60,7 @@ class Dog
 
   def self.find_or_create_by(attributes)
     sql = <<-SQL
-      SELECT name, breed
+      SELECT id, name, breed
       FROM dogs
       WHERE name = ?, breed = ?
     SQL
