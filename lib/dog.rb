@@ -34,6 +34,9 @@ class Dog
     end
   end
 
-  def self.create
+  def self.create(attributes)
+    dog = Dog.new(attributes)
+    dog.save
+    dog
   end
 end
