@@ -52,7 +52,7 @@ class Dog
     dog = Dog.new({})
     dog.id = row[0]
     dog.name = row[1]
-    dog.grade = row[2]
+    dog.breed = row[2]
     dog
   end
 
